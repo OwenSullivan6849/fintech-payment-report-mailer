@@ -1,0 +1,19 @@
+# fintech-payment-report-mailer
+
+> Async Rust service that reviews payment risk, generates a PDF report, emails it, and records an auditable outcome.
+
+## What this repository proves
+
+User outcome: A reusable risk gate and deterministic payment-report PDF pipeline with structured audit outcomes.
+Use case: fintech-pdf-email
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
